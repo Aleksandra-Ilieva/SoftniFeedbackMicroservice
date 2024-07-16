@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotNull;
 
 public class FeedbackDto {
 
+    private long id;
+
     @NotNull
     @NotBlank(message = "Full Name must not be blank!")
     private String fullName;
@@ -16,6 +18,14 @@ public class FeedbackDto {
     @NotNull
     @NotBlank(message = "Message must not be blank!")
     private String message;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getFullName() {
         return fullName;
