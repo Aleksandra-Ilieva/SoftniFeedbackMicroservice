@@ -9,7 +9,7 @@
 spring.datasource.username=${db_username}
 spring.datasource.password=${db_password}
 spring.datasource.url=${db_dataUrl}/clinic?useSSL=true&createDatabaseIfNotExist=true
-Това е локалния ми url (db_dataUrl-jdbc:mysql://localhost:3306)
+Пример за локален url (db_dataUrl-jdbc:mysql://localhost:3306)
 
 ````
 ### Ако няма да изпозлвате MYSQL , моля променете и следните настройки в application.properties:
