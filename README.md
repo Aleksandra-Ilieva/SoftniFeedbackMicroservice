@@ -3,13 +3,13 @@
 
 
 # Tech stack
-#### 1.Java 17
-#### 2. gradle
+#### 1. Java 17
+#### 2. Gradle
 Всички останали зависимости и библиотеки могат да се видят в `build.gradle` файла.
 
 ## Конфигурация и Стартиране
 
-1. **Конфигурирайте Environment Variables**:
+1. **Конфигуриране на Environment Variables**:
    За стартиране на проекта са нужни следните environment variables, отговарящи на съответните конфигурации в [application.properties](src/main/resources/application.properties):
 - `db_username` -> `spring.datasource.username`
 - `db_password` -> `spring.datasource.password`
@@ -32,7 +32,7 @@ spring.jpa.properties.hibernate.dialect
 ```
 
 ## Конфигурация на Ключа за Свързване
-Добавя се ключ за свързване с микросървиса в environment variables. Стойността на ключа се избира от потребителя.
+Добавя се ключ за връзка на външни приложения с микросървиса в environment variables. Стойността на ключа се избира от потребителя.
 ````
 api.key=${api_key}
 ````
