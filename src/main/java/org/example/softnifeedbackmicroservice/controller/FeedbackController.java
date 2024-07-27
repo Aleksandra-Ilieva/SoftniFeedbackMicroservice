@@ -48,7 +48,9 @@ public class FeedbackController {
     public ResponseEntity<List<FeedbackDto>> getAllFeedbacks(@RequestParam("api_key") String requestApiKey) {
         if (!isApiKeyValid(requestApiKey)) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+            
         }
+
         return ResponseEntity.ok(this.feedbackService.getLastTen());
     }
 }
